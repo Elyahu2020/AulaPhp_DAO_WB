@@ -34,13 +34,31 @@
 
   echo $usuario;*/
 
-  $aluno = new Usuario("aluno", "@lun0");
-
-  
+  /*CRIANDO UM NOVO USUARIO
+  $aluno = new Usuario("aluno", "@lun0");  
 
   $aluno->insert();
 
-  echo $aluno
+  echo $aluno;*/
+
+  //CRIANDO ALTERAÇÃO DE USUARIO
+
+
+  $usuario = new Usuario();
+
+  $usuario->loadById(3);
+  $usuario->update("Natan","tirbira");
+
+
+  /*CRIANDO DELETE
+
+  $usuario = new Usuario();
+
+  $usuario->loadById(3);
+
+  $usuario->delete();
+
+  echo $usuario;*/
   
 
 
